@@ -1,6 +1,6 @@
 # FresnIA · Aviso legal, condiciones de uso y política de privacidad
 
-**Última actualización:** noviembre de 2026
+**Última actualización:** 7 de noviembre de 2026
 
 FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote y Serracines. Es un **proyecto vecinal, gratuito, sin ánimo de lucro e independiente**: **no es un servicio del Ayuntamiento de Fresno de Torote** ni de ninguna administración, que no lo patrocinan ni lo supervisan.
 
@@ -35,7 +35,7 @@ FresnIA **no toma decisiones automatizadas** que produzcan efectos jurídicos so
 
 ## 4. Qué datos tratamos
 
-- Tu **número de teléfono** de WhatsApp, que es lo que identifica la conversación.
+- Tu **número de teléfono** de WhatsApp, que es lo que identifica la conversación. En la base de datos se guarda sustituido por un código (apartado 10).
 - Los **mensajes de texto** que envías, las respuestas del asistente y su fecha y hora.
 - El **contexto de la conversación en curso**: por ejemplo, la parada o el destino del autobús por el que preguntas, para que no tengas que repetirlo.
 - **Contadores** del número de mensajes, para el límite de uso.
@@ -44,7 +44,7 @@ Además:
 - **No pedimos tu nombre.** WhatsApp nos envía tu nombre de perfil, pero no se guarda.
 - **No procesamos audios, fotos, ubicaciones ni documentos.** De una foto solo se lee el texto que escribas junto a ella.
 
-**Por favor, no envíes** datos de salud, de tu DNI, bancarios ni otros datos sensibles tuyos o de otras personas: no son necesarios para el servicio. Si los envías, se tratarán solo para responderte y se borrarán junto con el resto de la conversación (apartado 6).
+**Por favor, no envíes** datos de salud, de tu DNI, bancarios ni otros datos sensibles tuyos o de otras personas: no son necesarios para el servicio. Si los envías, se tratarán solo para responderte y se borrarán junto con el resto de la conversación, y sus copias en los registros técnicos a los 30 días (apartado 6).
 
 ---
 
@@ -54,7 +54,7 @@ Además:
 |---|---|
 | Responder a tus preguntas y mantener el contexto de la conversación | Prestación del servicio que solicitas al escribir (art. 6.1.b) |
 | Darte la bienvenida e informarte una sola vez | Prestación del servicio (art. 6.1.b) |
-| Seguridad, límite de uso y evitar abusos; resolver fallos técnicos | Interés legítimo en que el servicio funcione y sea seguro (art. 6.1.f) |
+| Seguridad, límite de uso y evitar abusos; resolver fallos técnicos y mejorar el servicio | Interés legítimo en que el servicio funcione, sea seguro y mejore (art. 6.1.f) |
 | Atender el ejercicio de tus derechos | Obligación legal (art. 6.1.c) |
 
 Tus datos **no se usan para publicidad, no se venden ni se ceden**, y **no se usan para entrenar modelos de inteligencia artificial.**
@@ -69,9 +69,9 @@ Tus datos **no se usan para publicidad, no se venden ni se ceden**, y **no se us
 | Contexto de la conversación (parada, destino…) | **7 días** desde tu último mensaje |
 | Registro de que ya recibiste el mensaje de bienvenida | **1 año** desde tu último mensaje |
 | Contadores del límite de uso | **1 hora** y **24 horas** |
-| Registros técnicos del servidor, para resolver fallos | **30 días**; no guardan tu número, solo un código que no permite saber cuál es |
+| Registros técnicos del servidor, con una copia de tus mensajes, para resolver fallos y mejorar el servicio | **30 días**; no guardan tu número, solo un código que no permite saber cuál es, y se quitan los teléfonos, correos, DNI e IBAN que escribas |
 
-Con **BORRAR DATOS** se eliminan **al momento** tu historial, el contexto y el registro de bienvenida. Los registros técnicos se borran solos en el plazo indicado.
+Con **BORRAR DATOS** se eliminan **al momento** tu historial, el contexto y el registro de bienvenida, y el asistente te confirma si se ha hecho. Los registros técnicos se borran solos en el plazo indicado.
 
 Google, que genera las respuestas, puede conservar las consultas durante un tiempo limitado, **solo para detectar abusos**, según sus condiciones.
 
@@ -85,7 +85,7 @@ Para funcionar, FresnIA usa estos proveedores, que actúan **por cuenta del resp
 |---|---|---|
 | **Meta Platforms Ireland** (WhatsApp Business) | Enviar y recibir los mensajes | Número y mensajes |
 | **Microsoft Ireland** (Azure) | Servidor donde funciona el asistente, en **España (Spain Central)** | Número y mensajes |
-| **Upstash, Inc.** | Base de datos de las conversaciones, en **EE. UU. (California)** | Número, historial y contexto |
+| **Upstash, Inc.** | Base de datos de las conversaciones, en **EE. UU. (California)** | Un código en lugar de tu número, el historial y el contexto |
 | **Google** (Gemini API) | Generar las respuestas | Texto de la conversación, **sin tu número** |
 | **Pinecone Systems, Inc.** | Buscador de la información municipal, en **EE. UU. (Virginia)** | Una representación numérica de tu pregunta, sin tu número |
 | **Google** (Google Maps) | Buscar comercios y lugares | Solo el nombre del sitio buscado |
@@ -128,6 +128,7 @@ Si eres titular de algún contenido o detectas un error que te afecta, escríben
 
 - Las comunicaciones van cifradas.
 - El servidor solo acepta mensajes verificados como enviados por WhatsApp.
+- En la base de datos, tu número se sustituye por un código que no permite saber cuál es sin una clave secreta que solo tiene el responsable.
 - Las claves de acceso a los servicios están protegidas y solo el responsable puede administrar el sistema.
 - Si hubiera un incidente de seguridad que afectase a tus datos, se actuaría conforme al RGPD, incluida la comunicación a la AEPD cuando proceda.
 
