@@ -1,6 +1,6 @@
 # FresnIA · Aviso legal, condiciones de uso y política de privacidad
 
-**Última actualización:** 7 de noviembre de 2026
+**Última actualización:** 11 de noviembre de 2026
 
 FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote y Serracines. Es un **proyecto vecinal, gratuito, sin ánimo de lucro e independiente**: **no es un servicio del Ayuntamiento de Fresno de Torote** ni de ninguna administración, que no lo patrocinan ni lo supervisan.
 
@@ -29,6 +29,8 @@ FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote
 
 Conforme al Reglamento (UE) 2024/1689 de Inteligencia Artificial, te informamos de que **al escribir a FresnIA hablas con un sistema de inteligencia artificial, no con una persona.** Las respuestas las genera el modelo Gemini de Google.
 
+Si pides las novedades del pueblo **en audio**, te las lee una **voz sintética generada por inteligencia artificial** (Azure AI Speech, de Microsoft), no una persona. El resumen lo escribe Gemini a partir de lo que publica el Ayuntamiento.
+
 FresnIA **no toma decisiones automatizadas** que produzcan efectos jurídicos sobre ti ni te afecten de forma significativa, y **no elabora perfiles.**
 
 ---
@@ -36,13 +38,13 @@ FresnIA **no toma decisiones automatizadas** que produzcan efectos jurídicos so
 ## 4. Qué datos tratamos
 
 - Tu **número de teléfono** de WhatsApp, que es lo que identifica la conversación. En la base de datos se guarda sustituido por un código (apartado 10).
-- Los **mensajes de texto** que envías, las respuestas del asistente y su fecha y hora.
+- Los **mensajes de texto** que envías (también las opciones que pulses en un botón o una lista), las respuestas del asistente y su fecha y hora.
 - El **contexto de la conversación en curso**: por ejemplo, la parada o el destino del autobús por el que preguntas, para que no tengas que repetirlo.
 - **Contadores** del número de mensajes, para el límite de uso.
 
 Además:
 - **No pedimos tu nombre.** WhatsApp nos envía tu nombre de perfil, pero no se guarda.
-- **No procesamos audios, fotos, ubicaciones ni documentos.** De una foto solo se lee el texto que escribas junto a ella.
+- **No procesamos los audios, fotos, ubicaciones ni documentos que envíes.** De una foto solo se lee el texto que escribas junto a ella.
 
 **Por favor, no envíes** datos de salud, de tu DNI, bancarios ni otros datos sensibles tuyos o de otras personas: no son necesarios para el servicio. Si los envías, se tratarán solo para responderte y se borrarán junto con el resto de la conversación, y sus copias en los registros técnicos a los 30 días (apartado 6).
 
@@ -87,6 +89,7 @@ Para funcionar, FresnIA usa estos proveedores, que actúan **por cuenta del resp
 | **Microsoft Ireland** (Azure) | Servidor donde funciona el asistente, en **España (Spain Central)** | Número y mensajes |
 | **Upstash, Inc.** | Base de datos de las conversaciones, en **EE. UU. (California)** | Un código en lugar de tu número, el historial y el contexto |
 | **Google** (Gemini API) | Generar las respuestas | Texto de la conversación, **sin tu número** |
+| **Microsoft** (Azure AI Speech) | Poner voz al resumen de novedades del pueblo, en **EE. UU.** | **Ningún dato tuyo**: solo el texto del resumen, hecho con información pública |
 | **Pinecone Systems, Inc.** | Buscador de la información municipal, en **EE. UU. (Virginia)** | Una representación numérica de tu pregunta, sin tu número |
 | **Google** (Google Maps) | Buscar comercios y lugares | Solo el nombre del sitio buscado |
 
