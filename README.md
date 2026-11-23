@@ -1,6 +1,6 @@
 # FresnIA · Aviso legal, condiciones de uso y política de privacidad
 
-**Última actualización:** [FECHA DEL CAMBIO A VERTEX] de 2026
+**Última actualización:** 24 de noviembre de 2026
 
 FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote y Serracines. Es un **proyecto vecinal, gratuito, sin ánimo de lucro e independiente**: **no es un servicio del Ayuntamiento de Fresno de Torote** ni de ninguna administración, que no lo patrocinan ni lo supervisan.
 
