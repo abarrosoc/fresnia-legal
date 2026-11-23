@@ -1,6 +1,6 @@
 # FresnIA · Aviso legal, condiciones de uso y política de privacidad
 
-**Última actualización:** 11 de noviembre de 2026
+**Última actualización:** [FECHA DEL CAMBIO A VERTEX] de 2026
 
 FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote y Serracines. Es un **proyecto vecinal, gratuito, sin ánimo de lucro e independiente**: **no es un servicio del Ayuntamiento de Fresno de Torote** ni de ninguna administración, que no lo patrocinan ni lo supervisan.
 
@@ -27,7 +27,7 @@ FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote
 
 ## 3. Inteligencia artificial
 
-Conforme al Reglamento (UE) 2024/1689 de Inteligencia Artificial, te informamos de que **al escribir a FresnIA hablas con un sistema de inteligencia artificial, no con una persona.** Las respuestas las genera el modelo Gemini de Google.
+Conforme al Reglamento (UE) 2024/1689 de Inteligencia Artificial, te informamos de que **al escribir a FresnIA hablas con un sistema de inteligencia artificial, no con una persona.** Las respuestas las genera el modelo Gemini de Google, que funciona en **Google Cloud (Vertex AI) dentro de la Unión Europea**.
 
 Si pides las novedades del pueblo **en audio**, te las lee una **voz sintética generada por inteligencia artificial** (Azure AI Speech, de Microsoft), no una persona. El resumen lo escribe Gemini a partir de lo que publica el Ayuntamiento.
 
@@ -75,7 +75,7 @@ Tus datos **no se usan para publicidad, no se venden ni se ceden**, y **no se us
 
 Con **BORRAR DATOS** se eliminan **al momento** tu historial, el contexto y el registro de bienvenida, y el asistente te confirma si se ha hecho. Los registros técnicos se borran solos en el plazo indicado.
 
-Google, que genera las respuestas, puede conservar las consultas durante un tiempo limitado, **solo para detectar abusos**, según sus condiciones.
+Google Cloud, que genera las respuestas, las trata **solo para dar el servicio**, según su contrato de tratamiento de datos, y **no las usa para entrenar sus modelos**. Puede conservarlas un tiempo limitado por motivos técnicos o de seguridad, según sus condiciones.
 
 ---
 
@@ -88,13 +88,14 @@ Para funcionar, FresnIA usa estos proveedores, que actúan **por cuenta del resp
 | **Meta Platforms Ireland** (WhatsApp Business) | Enviar y recibir los mensajes | Número y mensajes |
 | **Microsoft Ireland** (Azure) | Servidor donde funciona el asistente, en **España (Spain Central)** | Número y mensajes |
 | **Upstash, Inc.** | Base de datos de las conversaciones, en **EE. UU. (California)** | Un código en lugar de tu número, el historial y el contexto |
-| **Google** (Gemini API) | Generar las respuestas | Texto de la conversación, **sin tu número** |
+| **Google Cloud EMEA Limited** (Vertex AI) | Generar las respuestas y preparar tu pregunta para el buscador, en la **Unión Europea** | Texto de la conversación, **sin tu número** |
 | **Microsoft** (Azure AI Speech) | Poner voz al resumen de novedades del pueblo, en **EE. UU.** | **Ningún dato tuyo**: solo el texto del resumen, hecho con información pública |
 | **Pinecone Systems, Inc.** | Buscador de la información municipal, en **EE. UU. (Virginia)** | Una representación numérica de tu pregunta, sin tu número |
 | **Google** (Google Maps) | Buscar comercios y lugares | Solo el nombre del sitio buscado |
 
 Varios de estos proveedores tratan datos **fuera del Espacio Económico Europeo, en EE. UU.** Esas transferencias internacionales están amparadas así:
-- **Upstash, Google y Meta:** están adheridos al **Marco de Privacidad de Datos UE-EE. UU.** (decisión de adecuación de la Comisión Europea de 10 de julio de 2023).
+- **Upstash, Meta y Google (Google Maps):** están adheridos al **Marco de Privacidad de Datos UE-EE. UU.** (decisión de adecuación de la Comisión Europea de 10 de julio de 2023).
+- **Las respuestas** ya no salen del Espacio Económico Europeo: Google Cloud las genera en la Unión Europea.
 - **Pinecone:** su contrato de tratamiento de datos incluye las **cláusulas contractuales tipo** aprobadas por la Comisión Europea (Decisión 2021/914).
 
 No se comunican datos a nadie más, salvo obligación legal.
