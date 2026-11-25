@@ -29,7 +29,7 @@ FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote
 
 Conforme al Reglamento (UE) 2024/1689 de Inteligencia Artificial, te informamos de que **al escribir a FresnIA hablas con un sistema de inteligencia artificial, no con una persona.** Las respuestas las genera el modelo Gemini de Google, que funciona en **Google Cloud (Vertex AI) dentro de la Unión Europea**.
 
-Si envías una **nota de voz**, Gemini la **transcribe a texto** en Google Cloud (Vertex AI), dentro de la Unión Europea, y el asistente te responde a partir de esa transcripción, que te muestra antes de la respuesta («🎙️ He entendido: …») para que veas si te ha entendido bien.
+Si envías una **nota de voz**, Gemini la **transcribe a texto** en Google Cloud (Vertex AI), dentro de la Unión Europea, y el asistente te responde a partir de esa transcripción, igual que a un mensaje escrito.
 
 Si pides las novedades del pueblo **en audio**, te las lee una **voz sintética generada por inteligencia artificial** (Azure AI Speech, de Microsoft), no una persona. El resumen lo escribe Gemini a partir de lo que publica el Ayuntamiento.
 
