@@ -1,6 +1,6 @@
 # FresnIA · Aviso legal, condiciones de uso y política de privacidad
 
-**Última actualización:** 24 de noviembre de 2026
+**Última actualización:** 25 de noviembre de 2026
 
 FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote y Serracines. Es un **proyecto vecinal, gratuito, sin ánimo de lucro e independiente**: **no es un servicio del Ayuntamiento de Fresno de Torote** ni de ninguna administración, que no lo patrocinan ni lo supervisan.
 
@@ -29,6 +29,8 @@ FresnIA es un asistente virtual de WhatsApp para los vecinos de Fresno de Torote
 
 Conforme al Reglamento (UE) 2024/1689 de Inteligencia Artificial, te informamos de que **al escribir a FresnIA hablas con un sistema de inteligencia artificial, no con una persona.** Las respuestas las genera el modelo Gemini de Google, que funciona en **Google Cloud (Vertex AI) dentro de la Unión Europea**.
 
+Si envías una **nota de voz**, Gemini la **transcribe a texto** en Google Cloud (Vertex AI), dentro de la Unión Europea, y el asistente te responde a partir de esa transcripción, igual que a un mensaje escrito.
+
 Si pides las novedades del pueblo **en audio**, te las lee una **voz sintética generada por inteligencia artificial** (Azure AI Speech, de Microsoft), no una persona. El resumen lo escribe Gemini a partir de lo que publica el Ayuntamiento.
 
 FresnIA **no toma decisiones automatizadas** que produzcan efectos jurídicos sobre ti ni te afecten de forma significativa, y **no elabora perfiles.**
@@ -38,13 +40,14 @@ FresnIA **no toma decisiones automatizadas** que produzcan efectos jurídicos so
 ## 4. Qué datos tratamos
 
 - Tu **número de teléfono** de WhatsApp, que es lo que identifica la conversación. En la base de datos se guarda sustituido por un código (apartado 10).
-- Los **mensajes de texto** que envías (también las opciones que pulses en un botón o una lista), las respuestas del asistente y su fecha y hora.
+- Los **mensajes de texto** que envías (también las opciones que pulses en un botón o una lista), la **transcripción de tus notas de voz**, las respuestas del asistente y su fecha y hora.
 - El **contexto de la conversación en curso**: por ejemplo, la parada o el destino del autobús por el que preguntas, para que no tengas que repetirlo.
 - **Contadores** del número de mensajes, para el límite de uso.
 
 Además:
 - **No pedimos tu nombre.** WhatsApp nos envía tu nombre de perfil, pero no se guarda.
-- **No procesamos los audios, fotos, ubicaciones ni documentos que envíes.** De una foto solo se lee el texto que escribas junto a ella.
+- **Tus notas de voz se transcriben al momento y el audio no se guarda**, ni en la base de datos ni en los registros técnicos: lo que queda es la transcripción, igual que un mensaje escrito. Las notas de más de unos 4 minutos no se transcriben.
+- **No procesamos las fotos, ubicaciones ni documentos que envíes.** De una foto solo se lee el texto que escribas junto a ella.
 
 **Por favor, no envíes** datos de salud, de tu DNI, bancarios ni otros datos sensibles tuyos o de otras personas: no son necesarios para el servicio. Si los envías, se tratarán solo para responderte y se borrarán junto con el resto de la conversación, y sus copias en los registros técnicos a los 30 días (apartado 6).
 
@@ -67,7 +70,8 @@ Tus datos **no se usan para publicidad, no se venden ni se ceden**, y **no se us
 
 | Dato | Plazo |
 |---|---|
-| Historial de la conversación | **7 días** desde tu último mensaje; se borra solo |
+| Historial de la conversación (con la transcripción de tus notas de voz) | **7 días** desde tu último mensaje; se borra solo |
+| Audio de tus notas de voz | **No se guarda**: solo se usa en el momento para transcribirlo |
 | Contexto de la conversación (parada, destino…) | **7 días** desde tu último mensaje |
 | Registro de que ya recibiste el mensaje de bienvenida | **1 año** desde tu último mensaje |
 | Contadores del límite de uso | **1 hora** y **24 horas** |
@@ -75,7 +79,7 @@ Tus datos **no se usan para publicidad, no se venden ni se ceden**, y **no se us
 
 Con **BORRAR DATOS** se eliminan **al momento** tu historial, el contexto y el registro de bienvenida, y el asistente te confirma si se ha hecho. Los registros técnicos se borran solos en el plazo indicado.
 
-Google Cloud, que genera las respuestas, las trata **solo para dar el servicio**, según su contrato de tratamiento de datos, y **no las usa para entrenar sus modelos**. Puede conservarlas un tiempo limitado por motivos técnicos o de seguridad, según sus condiciones.
+Google Cloud, que transcribe las notas de voz y genera las respuestas, las trata **solo para dar el servicio**, según su contrato de tratamiento de datos, y **no las usa para entrenar sus modelos**. Puede conservarlas un tiempo limitado por motivos técnicos o de seguridad, según sus condiciones.
 
 ---
 
@@ -88,7 +92,7 @@ Para funcionar, FresnIA usa estos proveedores, que actúan **por cuenta del resp
 | **Meta Platforms Ireland** (WhatsApp Business) | Enviar y recibir los mensajes | Número y mensajes |
 | **Microsoft Ireland** (Azure) | Servidor donde funciona el asistente, en **España (Spain Central)** | Número y mensajes |
 | **Upstash, Inc.** | Base de datos de las conversaciones, en **EE. UU. (California)** | Un código en lugar de tu número, el historial y el contexto |
-| **Google Cloud EMEA Limited** (Vertex AI) | Generar las respuestas y preparar tu pregunta para el buscador, en la **Unión Europea** | Texto de la conversación, **sin tu número** |
+| **Google Cloud EMEA Limited** (Vertex AI) | Transcribir tus notas de voz, generar las respuestas y preparar tu pregunta para el buscador, en la **Unión Europea** | Texto de la conversación y el audio de tus notas de voz, **sin tu número** |
 | **Microsoft** (Azure AI Speech) | Poner voz al resumen de novedades del pueblo, en **EE. UU.** | **Ningún dato tuyo**: solo el texto del resumen, hecho con información pública |
 | **Pinecone Systems, Inc.** | Buscador de la información municipal, en **EE. UU. (Virginia)** | Una representación numérica de tu pregunta, sin tu número |
 | **Google** (Google Maps) | Buscar comercios y lugares | Solo el nombre del sitio buscado |
